@@ -1,0 +1,67 @@
+/* Estilo básico para o menu */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 10px;
+}
+
+/* Estilo para a lista do menu */
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para cada item do menu */
+.menu-item {
+  margin: 0 15px;
+}
+
+/* Estilo para o link do menu */
+.menu-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #e68434;
+}
+
+/* Estilo para o item do menu ativo */
+.menu-item.active .menu-link {
+  color: #e68434;
+  font-weight: bold;
+}
+
+/* Estilo para o sublinhado do item do menu ativo */
+.menu-item.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #e68434;
+  margin-top: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 40px; /* Ajuste a altura conforme necessário */
+  width: auto;
+}
